@@ -23,9 +23,9 @@ namespace HairSalon.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Animal animal)
+        public ActionResult Create(Client client)
         {
-            _db.Animals.Add(animal);
+            _db.Clients.Add(client);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
